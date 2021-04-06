@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.8.5 on linux)" generated="20210406 19:13:51.267" rpa="false" schemaversion="2">
+<suite id="s1" name="Rb" source="/home/a67645/Desktop/LEI2021_navegacao_segura/rb.txt">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210406 19:13:51.401" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20210406 19:13:51.402" level="INFO">Firefox driver log is always forced to to: /home/a67645/Desktop/LEI2021_navegacao_segura/geckodriver-1.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210406 19:13:51.405" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210406 19:13:51.405" endtime="20210406 19:13:51.405"/>
+</kw>
+<msg timestamp="20210406 19:13:51.406" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20210406 19:13:51.401" endtime="20210406 19:13:51.406"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20210406 19:13:51.406" endtime="20210406 19:13:51.406"/>
+</kw>
+<kw name="acessogoogle">
+<status status="NOT RUN" starttime="20210406 19:13:51.406" endtime="20210406 19:13:51.406"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20210406 19:13:51.407" endtime="20210406 19:13:51.407"/>
+</kw>
+<status status="FAIL" starttime="20210406 19:13:51.400" endtime="20210406 19:13:51.407">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20210406 19:13:51.268" endtime="20210406 19:13:51.408"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Rb">Rb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
