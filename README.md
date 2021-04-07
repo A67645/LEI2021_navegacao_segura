@@ -11,7 +11,7 @@ TODO
     - [x]  Accept terms
     - [x]  Input word and search
     - [x]  Get link from results
-    - [ x ]  Open the result Link
+    - [x]  Open the result Link
 2. Youtube Script (Maybe LOGIN???)
     - [ ]  Open youtube
     - [ ]  Accept terms
