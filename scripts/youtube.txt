@@ -1,0 +1,33 @@
+*** Settings ***
+Library  SeleniumLibrary
+
+*** Variables ***
+${BROWSER}  firefox
+${URL4}     https://www.youtube.com/
+${word}=   Raptor Egg Frank
+*** Test Cases ***
+Teste_Chrome_geral
+    open browser    ${URL4}   ${BROWSER}
+    maximize browser window
+    acessoyoutube
+    close browser
+
+*** Keywords ***
+acessoyoutube    
+    Wait Until Element Is Visible   xpath=/html/body/div/c-wiz/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button
+    Click Button   xpath=/html/body/div/c-wiz/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button
+    Sleep   5
+    Wait Until Element Is Visible   xpath=//*[@id="dismiss-button"]
+    press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   ENTER
+    sleep   5  
+    go to    https://www.youtube.com/results?search_query=frank+raptor+egg
+    Click Element     xpath=/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]
+    sleep   60
+
+
+
+  
+
+

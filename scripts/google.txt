@@ -1,0 +1,33 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${BROWSER}   firefox
+${word}
+${URL}   https://www.google.com/
+@{ Word_list }  stack overflow how to capture traffic    java display thread   p2p network
+
+*** Keywords ***
+Set Environment Variable  webdriver.gecko.driver  ./geckodriver.exe
+acessogoogle
+	${word}=   Evaluate  random.choice($Word_list) 
+	Wait Until Element Is Visible   xpath=//*[@id="zV9nZe"]
+	Click Button   xpath=//*[@id="zV9nZe"]
+	Input Text   xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input   ${word}
+	Log To Console   ${word}
+	press keys   None   ENTER
+	sleep   3
+	${Page1}=   Get Element Attribute   xpath=/html/body/div[7]/div/div[9]/div[1]/div//a   href
+	Log To Console   ${Page1}
+	Click Link   ${Page1}
+
+*** Test cases ***
+LoginTest
+	Open Browser  ${URL} 
+	Maximize Browser Window
+	acessogoogle
+	Close Browser
+	Close Browser
+
+
+
