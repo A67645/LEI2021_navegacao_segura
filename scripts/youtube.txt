@@ -20,14 +20,19 @@ acessoyoutube
     Wait Until Element Is Visible   xpath=//*[@id="dismiss-button"]
     press keys   None   TAB
     press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   ENTER     
+    sleep   3
+    Input Text   xpath=//*[@id="identifierId"]   armaldo.franciso@gmail.com
     press keys   None   ENTER
-    sleep   5  
-    go to    https://www.youtube.com/results?search_query=frank+raptor+egg
+    sleep   3
+    Input Text   xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input   passwordfraca
+    press keys   None   ENTER
+    sleep   3
+    go to    https://www.youtube.com/results?search_query=Drive+Drive+Drive+song+(Impractical+Jokers)+-+2+HOUR+VERSION
     Click Element     xpath=/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]
-    sleep   60
+    sleep   360
 
 
 
   
-
-
