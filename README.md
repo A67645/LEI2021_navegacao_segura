@@ -13,10 +13,10 @@ TODO
     - [x]  Get link from results
     - [x]  Open the result Link
 2. Youtube Script (Maybe LOGIN???)
-    - [ ]  Open youtube
-    - [ ]  Accept terms
-    - [ ]  Open random video
-    - [ ]  Play video and wait for the end
+    - [x]  Open youtube
+    - [x]  Accept terms
+    - [x]  Open random video
+    - [x]  Play video and wait for the end
 3. Instagram script
     - [ ]  Open instagram
     - [ ]  Login
