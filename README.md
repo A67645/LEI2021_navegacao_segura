@@ -12,9 +12,9 @@ TODO
     - [x]  Input word and search
     - [x]  Get link from results
     - [x]  Open the result Link
-2. Youtube Script (Maybe LOGIN???)
+2. Youtube Script 
     - [x]  Open youtube
-    - [x]  Accept terms
+    - [x]  Login
     - [x]  Open random video
     - [x]  Play video and wait for the end
 3. Instagram script
