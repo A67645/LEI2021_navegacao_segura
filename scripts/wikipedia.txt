@@ -1,0 +1,36 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${BROWSER}   firefox
+${word}
+${URL}   https://pt.wikipedia.org/
+@{ Word_list }  https://pt.wikipedia.org/wiki/Border_Gateway_Protocol   https://pt.wikipedia.org/wiki/Multi_Protocol_Label_Switching   https://pt.wikipedia.org/wiki/Open_Shortest_Path_First
+
+*** Keywords ***
+Set Environment Variable  webdriver.gecko.driver  ./geckodriver.exe
+acessowiki
+	${word}=   Evaluate  random.choice($Word_list) 
+	sleep   3  
+	go to   ${word}
+	Log To Console   ${word}
+	press keys   None   ENTER
+	sleep   3  
+    execute javascript      window.scrollTo(0,300)
+    sleep   5
+    execute javascript      window.scrollTo(300,600)
+    sleep   5
+    execute javascript      window.scrollTo(600,900)
+    sleep   5
+    execute javascript      window.scrollTo(900,1200)
+
+
+*** Test cases ***
+Wikpedia
+	Open Browser  ${URL} 
+	Maximize Browser Window
+	acessowiki
+	Close Browser
+
+
+
