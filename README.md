@@ -33,5 +33,6 @@ TODO
     - [ ] Open twitch
     - [ ] Open random video/Stream
 7. Wikipedia script
-    - [ ] Open wikipedia
-    - [ ] Open random article
+    - [x] Open wikipedia
+    - [x] Open random article
+    - [x] Scroll article
