@@ -1,0 +1,48 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${BROWSER}   firefox
+${word}
+${URL}   https://www.instagram.com/
+
+*** Keywords ***
+Set Environment Variable  webdriver.gecko.driver  ./geckodriver.exe
+acessoinstagram
+	sleep   5
+	press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   ENTER  
+    sleep   3 
+	Input Text   xpath=/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input   armaldoFransico
+	Input Text   xpath=/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input   criptografia
+    press keys   None   ENTER  
+    sleep   3    
+    press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   ENTER 
+    sleep   5   
+    press keys   None   TAB
+    press keys   None   TAB
+    press keys   None   ENTER 
+    sleep   3  
+    execute javascript      window.scrollTo(0,300)
+    sleep   5
+    execute javascript      window.scrollTo(300,600)
+    sleep   5
+    execute javascript      window.scrollTo(600,900)
+    sleep   5
+    execute javascript      window.scrollTo(900,1200)
+
+   
+   
+
+*** Test cases ***
+Instagram
+	Open Browser  ${URL} 
+	Maximize Browser Window
+	acessoinstagram
+
+
+
