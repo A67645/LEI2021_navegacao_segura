@@ -18,9 +18,9 @@ TODO
     - [x]  Open random video
     - [x]  Play video and wait for the end
 3. Instagram script
-    - [ ]  Open instagram
-    - [ ]  Login
-    - [ ]  Scroll media
+    - [x]  Open instagram
+    - [x]  Login
+    - [x]  Scroll media
 4. Facebook script
     - [ ]  Open facebook
     - [ ]  Login
