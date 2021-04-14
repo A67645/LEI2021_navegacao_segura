@@ -22,13 +22,13 @@ TODO
     - [x]  Login
     - [x]  Scroll media
 4. Facebook script
-    - [ ]  Open facebook
-    - [ ]  Login
-    - [ ]  Scroll media
+    - [x]  Open facebook
+    - [x]  Login
+    - [x]  Scroll media
 5. Amazon script
-    - [ ]  Open amazon
-    - [ ] Search item
-    - [ ] Add item to cart
+    - [x]  Open amazon
+    - [x] random select
+    - [x] scroll
 6. Twitch TV (Maybe LOGIN???)
     - [ ] Open twitch
     - [ ] Open random video/Stream
