@@ -13,6 +13,7 @@ driver.maximize_window()
 time.sleep(1)
 actions = driver.find_element_by_tag_name('body');  
 actions.send_keys(Keys.TAB * 3, Keys.ENTER)
+time.sleep(3)
 inputElement = driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
 inputElement.send_keys("armaldoFransico",Keys.TAB,"criptografia", Keys.ENTER)
 time.sleep(5)
