@@ -13,8 +13,8 @@ driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 actions = driver.find_element_by_tag_name('body');  
 actions.send_keys(Keys.TAB * 4, Keys.ENTER)
 time.sleep(1)
-actions = driver.find_element_by_tag_name('body');  
-actions.send_keys(Keys.TAB * 3, Keys.ENTER)
+actions = driver.find_element_by_xpath('/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[3]/div[2]/ytd-button-renderer/a/tp-yt-paper-button');  
+actions.send_keys( Keys.ENTER)
 #actions.click()
 #actions.send_keys(Keys.ENTER)
 time.sleep(1)
