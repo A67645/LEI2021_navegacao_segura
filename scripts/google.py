@@ -13,9 +13,8 @@ driver = Edge(options=options)
 driver.get("https://www.google.com/")
 driver.maximize_window()
 time.sleep(1)
-inputElement = driver.find_element_by_id("zV9nZe")
-inputElement.click()
-
+actions = driver.find_element_by_tag_name('body');  
+actions.send_keys(Keys.TAB * 5, Keys.ENTER)
 time.sleep(3)
 inputElement = driver.find_element_by_xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")
 inputElement.send_keys(random.choice(word_list), Keys.ENTER)

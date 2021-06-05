@@ -23,7 +23,10 @@ inputElement.send_keys('passwordfraca', Keys.ENTER)
 time.sleep(3)
 
 driver.get("https://www.facebook.com/")
-time.sleep(2)
+time.sleep(8)
+actions = driver.find_element_by_tag_name('body');  
+actions.click()
+time.sleep(8)
 driver.execute_script("window.scrollTo(0, 300)") 
 time.sleep(4)
 driver.execute_script("window.scrollTo(300, 600)") 

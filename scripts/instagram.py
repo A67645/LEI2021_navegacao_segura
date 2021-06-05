@@ -10,20 +10,15 @@ options.use_chromium = True
 driver = Edge(options=options)
 driver.get("https://www.instagram.com/")
 driver.maximize_window()
-time.sleep(1)
+time.sleep(3)
 actions = driver.find_element_by_tag_name('body');  
 actions.send_keys(Keys.TAB * 3, Keys.ENTER)
 time.sleep(3)
 inputElement = driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
 inputElement.send_keys("armaldoFransico",Keys.TAB,"criptografia", Keys.ENTER)
 time.sleep(5)
-
-actions = driver.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button');  
-actions.click()
-time.sleep(3)
-
 actions = driver.find_element_by_tag_name('body');  
-actions.send_keys(Keys.TAB * 2, Keys.ENTER)
+actions.send_keys(Keys.TAB , Keys.ENTER)
 
 time.sleep(4)
 driver.execute_script("window.scrollTo(0, 300)") 
