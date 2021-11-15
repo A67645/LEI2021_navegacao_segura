@@ -1,13 +1,10 @@
-from msedge.selenium_tools import Edge, EdgeOptions
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import random
 
-options = EdgeOptions()
-options.use_chromium = True
 
-
-driver = Edge(options=options)
+driver = webdriver.Chrome('C:/Users/Moisés/Desktop/chromedriver')
 driver.get("https://www.instagram.com/")
 driver.maximize_window()
 time.sleep(3)

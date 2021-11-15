@@ -1,19 +1,17 @@
-from msedge.selenium_tools import Edge, EdgeOptions
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import random
 
-options = EdgeOptions()
-options.use_chromium = True
 
-driver = Edge(options=options)
+driver = webdriver.Chrome('C:/Users/Moisés/Desktop/chromedriver')
+
 driver.maximize_window()
 driver.get("https://www.youtube.com/")
 time.sleep(1)
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 actions = driver.find_element_by_tag_name('body');  
 actions.send_keys(Keys.TAB * 4, Keys.ENTER)
-
-time.sleep(1)
 
 
 

@@ -1,15 +1,12 @@
-from msedge.selenium_tools import Edge, EdgeOptions
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import random
 
-options = EdgeOptions()
-options.use_chromium = True
 
+driver = webdriver.Chrome('C:/Users/Moisés/Desktop/chromedriver')
 
-
-word_list=["stack overflow how to capture traffic",    "java display thread",  "p2p network"]
-driver = Edge(options=options)
+word_list=["stack overflow how to capture traffic", "p2p network"]
 driver.get("https://www.google.com/")
 driver.maximize_window()
 time.sleep(1)
